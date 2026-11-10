@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class MarksAbove60 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter number of students: ");
+int n = sc.nextInt();
+int[] marks = new int[n];
+System.out.println("Enter marks:");
+for (int i = 0; i < n; i++) {
+marks[i] = sc.nextInt();
+}
+System.out.println("Marks above 60:");
+for (int mark : marks) {
+if (mark > 60) {
+System.out.println(mark);
+}
+
+}
+sc.close();
+}
+}
