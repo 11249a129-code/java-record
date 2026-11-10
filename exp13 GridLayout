@@ -1,0 +1,17 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import java.awt.GridLayout;
+public class GridLayoutDemo {
+public static void main(String[] args) {
+JFrame frame = new JFrame("GridLayout Example");
+frame.setLayout(new GridLayout(2, 2, 10, 10));
+frame.add(new JButton("One"));
+frame.add(new JButton("Two"));
+frame.add(new JButton("Three"));
+frame.add(new JButton("Four"));
+frame.setSize(300, 200);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setLocationRelativeTo(null);
+frame.setVisible(true);
+}
+}
