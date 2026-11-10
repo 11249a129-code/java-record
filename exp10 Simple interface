@@ -1,0 +1,15 @@
+interface Shape {
+void area();
+}
+class Circle implements Shape {
+public void area() {
+double radius = 5;
+System.out.println("Area of circle = " + (Math.PI * radius * radius));
+}
+}
+public class SimpleInterface {
+public static void main(String[] args) {
+Circle c = new Circle();
+c.area();
+}
+}
