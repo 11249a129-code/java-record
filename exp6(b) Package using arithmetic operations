@@ -1,0 +1,28 @@
+// Save this file as calculator/Operations.java
+package calculator;
+public class Operations {
+public int add(int a, int b) { return a + b; }
+public int subtract(int a, int b) { return a - b; }
+public int multiply(int a, int b) { return a * b; }
+
+public double divide(int a, int b) {
+if (b == 0) throw new ArithmeticException("Cannot divide by zero");
+return (double) a / b;
+}
+}
+/* Save the following in TestOperations.java in the parent folder:
+import calculator.Operations;
+public class TestOperations {
+public static void main(String[] args) {
+Operations op = new Operations();
+int a = 20, b = 5;
+System.out.println("Addition = " + op.add(a, b));
+System.out.println("Subtraction = " + op.subtract(a, b));
+System.out.println("Multiplication = " + op.multiply(a, b));
+System.out.println("Division = " + op.divide(a, b));
+}
+}
+Compile and run from the parent folder:
+javac calculator/Operations.java TestOperations.java
+java TestOperations
+*/
