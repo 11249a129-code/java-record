@@ -1,0 +1,25 @@
+// Save this file as geometry/Rectangle.java
+package geometry;
+public class Rectangle {
+public double area(double length, double breadth) {
+return length * breadth;
+}
+public double perimeter(double length, double breadth) {
+return 2 * (length + breadth);
+}
+}
+/* Save the following in TestRectangle.java in the parent folder:
+import geometry.Rectangle;
+public class TestRectangle {
+public static void main(String[] args) {
+Rectangle r = new Rectangle();
+double length = 10;
+double breadth = 5;
+System.out.println("Area = " + r.area(length, breadth));
+System.out.println("Perimeter = " + r.perimeter(length, breadth));
+}
+}
+Compile and run from the parent folder:
+javac geometry/Rectangle.java TestRectangle.java
+java TestRectangle
+*/
