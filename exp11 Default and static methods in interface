@@ -1,0 +1,23 @@
+interface MyInterface {
+void display();
+default void show() {
+System.out.println("This is a default method");
+}
+static void message() {
+System.out.println("This is a static method");
+}
+}
+class Demo implements MyInterface {
+public void display() {
+System.out.println("This is the abstract method");
+}
+
+}
+public class InterfaceMethods {
+public static void main(String[] args) {
+Demo d = new Demo();
+d.display();
+d.show();
+MyInterface.message();
+}
+}
