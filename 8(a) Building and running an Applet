@@ -1,0 +1,19 @@
+import java.applet.Applet;
+import java.awt.Graphics;
+/*
+* Applets require JDK 8 and an applet-capable viewer.
+* Save as HelloApplet.java.
+*/
+public class HelloApplet extends Applet {
+public void paint(Graphics g) {
+g.drawString("Welcome to Java Applet", 50, 50);
+}
+}
+/*
+* Compile: javac HelloApplet.java
+* Create HelloApplet.html containing:
+<applet code="HelloApplet.class" width="300" height="150">
+</applet>
+* Run using the JDK 8 appletviewer:
+* appletviewer HelloApplet.html
+*/
